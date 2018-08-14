@@ -1,0 +1,175 @@
+/*
+CPRG 210 Exercise 7
+CSS file for styling Travel Experts web pages
+Corinne Mullan
+May 22, 2018 
+*/
+
+body {
+	background-image: url("images/backgroundmap.png");
+	/*  Use a font from fonts.google.com  */
+	font-family: 'Kavivanar', cursive;
+	color: black;
+	margin: 0;
+}
+header {
+	background-color: #ffff80;
+	margin: 1.5%;
+}
+hr { 
+	border: 2px solid blue;
+} 
+sup {
+	vertical-align: super;
+}
+sub {
+	vertical-align: sub;
+}
+h1 {
+	font-size: 200%;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center-left;
+}
+h2 {
+	font-size: 140%;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+}
+#logo {
+	border: 2px solid black;
+	margin: 20px;
+	vertical-align: middle;
+}
+div {
+	text-align: center;
+	margin: 1.5%;
+}
+table {
+    border-collapse: collapse;
+	font-family: arial;
+	margin-left: auto;
+	margin-right: auto;
+}
+table, th, td {
+    border: 1px solid black;
+	padding: 0px;
+	vertical-align: middle;
+	text-align: center;
+} 
+th {
+	font-size: 16;
+	font-weight: bold;
+	padding: 10px;
+}
+nav {
+	text-align: center;
+}
+.small_img {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.large_img {
+	margin: 40px;
+}
+ul {
+	list-style-type: disc;
+	list-style-position: inside;
+}
+ul ul {
+	padding-left: 20px;
+}
+.list_nobullets {
+	list-style: none;
+}
+iframe {
+	border: 1px solid black;
+}
+#formdiv {
+	position: relative;
+    background-color: white;
+	text-align: left;
+	width: 400px;
+	margin: 1.5%;
+	padding: 10px;
+	border: 1px solid grey;
+} 
+#hint{
+	visibility: hidden;
+	position: absolute;
+	left: 340px;
+	top:  0px;
+	width: 200px;
+	border: 1px solid grey;
+	background-color: white;
+	padding:  10px;
+	color: blue;
+	font-style: italic;
+	z-index: 1;
+}
+input[type="text"], input[type="email"], input[type="tel"] {
+    background-color: #ebf5fb;
+    color: black;
+}
+input[type="submit"] {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px;
+}
+input[type="reset"] {
+	font-size: 16px;
+	padding: 10px;
+	margin-left: 80px;
+}
+select {
+	background-color: #ebf5fb;
+    color: black;
+}
+.hline{
+	clear: both;
+	margin: 1.5%;
+}
+footer {
+	clear: both;
+	background-color: #d0d0d0;
+	padding: 0.5%;
+	margin: 1.5%;
+}
+
+/* Add some very basic responsive web design.  Shrink the logo size if the screen width is
+   below 768 pixels.  Also prevent images from scaling up beyond their maximum size.  
+   Move the aside from the right to the left when the screen width is less than 768 pixels.  */
+img {
+	max-width: 100%;
+    height: auto;
+}
+@media(max-width:767px){
+	#logo {
+		width: 25%;
+	}
+	section {
+		float: left;
+		width: 96%;
+		margin: 1.5%
+	}
+	aside {
+		float: left;
+		width: 96%;
+		margin: 1.5%;
+	}
+}
+@media(min-width:768px){
+	section {
+		float: left;
+		width: 47%;
+		margin: 1.5%
+	}
+	aside {
+		float: right;
+		width: 47%;
+		margin: 1.5%;
+	}
+}
